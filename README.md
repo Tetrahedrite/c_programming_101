@@ -20,7 +20,7 @@ cd ch1
 make
 ```
 
-3. Build specific C file
+3. Build specific C file.
 ```sh
 cd ch1
 make 1_p01
@@ -38,7 +38,7 @@ cd ch1
 make run
 ```
 
-3. Run specific file
+3. Run specific file.
 ```sh
 cd ch1
 ./1_p01.out
