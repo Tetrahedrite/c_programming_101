@@ -1,5 +1,7 @@
 #!/bin/bash
 for filename in *.out; do
+    echo "----- Start $filename -----"
     ./$filename
-    printf "\n\n"
+    echo "----- End $filename -----"
+    printf "\n"
 done
