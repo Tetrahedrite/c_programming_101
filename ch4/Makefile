@@ -5,6 +5,8 @@ CFLAGS += -lm
 
 SRCS = $(wildcard *.c)
 
+.PHONY: all run
+
 all: $(SRCS:.c=)
 
 run:
