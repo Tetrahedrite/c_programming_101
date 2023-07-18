@@ -12,7 +12,7 @@ int main() {
     printf("직선의 시작점 좌표? ");
     scanf("%d %d", &start_x, &start_y);
 
-    printf("직선의 시작점 좌표? ");
+    printf("직선의 끝점 좌표? ");
     scanf("%d %d", &end_x, &end_y);
 
     printf("(%d, %d)~(%d, %d) 직선의 길이: %lf\n", \
