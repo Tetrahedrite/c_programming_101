@@ -27,7 +27,7 @@ int main() {
             result *= 1 - 0.033;
             break;
         default:
-            printf("잘못 입력하셨습니다.");
+            printf("잘못 입력하셨습니다.\n");
             break;
     }
 
