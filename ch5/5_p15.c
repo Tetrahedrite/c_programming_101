@@ -18,14 +18,23 @@ int main() {
     result = salary * work_hour * work_days_in_month;
 
     switch (tax_type) {
+        case 0:
+            break;
         case 1:
             result *= 1 - 0.0841;
             break;
         case 2:
             result *= 1 - 0.033;
             break;
+        default:
+            printf("잘못 입력하셨습니다.");
+            break;
     }
 
-    printf("예상 월급여: %d원\n", result);
+    if (0 <= tax_type && tax_type <= 2)
+        printf("예상 월급여: %d원\n", result);
+    else
+        return 1;
+
     return 0;
 }
