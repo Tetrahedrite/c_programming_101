@@ -47,7 +47,7 @@ int main() {
         if (!check_date(year, month, day))
             printf("잘못 입력하셨습니다. 유효한 날짜를 입력하세요.\n");
         else {
-            printf("입력한 날짜는 2022년 1월 1일입니다.\n");
+            printf("입력한 날짜는 %d년 %d월 %d일입니다.\n", year, month, day);
             return 0;
         }
     }
