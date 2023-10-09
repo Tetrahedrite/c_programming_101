@@ -1,5 +1,5 @@
 CFLAGS += -lm
-DIRS = ch1 ch2 ch3 ch4 ch5 ch6 ch7
+DIRS = ch1 ch2 ch3 ch4 ch5 ch6 ch7 ch8
 
 .PHONY: all run
 
