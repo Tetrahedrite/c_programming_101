@@ -15,8 +15,6 @@ void encrypt(char *str, int key) {
 
 int main() {
     char str[STR_SIZE];
-    str[0] = '\0';
-
     int key;
 
     while (1) {
