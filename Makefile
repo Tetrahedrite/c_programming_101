@@ -1,11 +1,15 @@
 CFLAGS += -lm
 DIRS = ch1 ch2 ch3 ch4 ch5 ch6 ch7 ch8 ch9 ch10 ch11 ch12
 
-.PHONY: all run
+.PHONY: all run clean
 
 all:
 	@ echo ${DIRS}
 	@ for dir in ${DIRS}; do $(MAKE) -C $$dir; done
+
+clean:
+	@ echo ${DIRS}
+	@ for dir in ${DIRS}; do $(MAKE) -C $$dir clean; done
 
 run:
 	@ for dir in ${DIRS}; do \
