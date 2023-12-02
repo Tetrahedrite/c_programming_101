@@ -50,9 +50,7 @@ int main() {
         fclose(fpText);
         return 1;
     }
-    for (int i = 0; i < n; i++) {
-        fwrite(&numbers[i], sizeof(int), 1, fpBinary);
-    }
+    fwrite(numbers, sizeof(int), n, fpBinary);
     fclose(fpBinary);
 
     printf("%s와 %s를 생성했습니다.\n", filenameText, filenameBinary);
