@@ -44,7 +44,7 @@ int main() {
     char filenameBinary[STR_SIZE];
     strcpy(filenameBinary, filename);
     strcat(filenameBinary, EXTENSION_BINARY);
-    FILE *fpBinary = fopen(filenameBinary, "w");
+    FILE *fpBinary = fopen(filenameBinary, "wb");
     if (fpBinary == NULL) {
         puts("파일 열기 실패\n");
         fclose(fpText);
